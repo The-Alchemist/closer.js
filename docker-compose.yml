@@ -1,0 +1,9 @@
+services:
+  closer-repl:
+    build: .
+    stdin_open: true        # Keep STDIN open (-i flag)
+    tty: true              # Allocate a pseudo-TTY (-t flag)
+    environment:
+      - NODE_ENV=development
+    ports:
+      - "3000:3000"
