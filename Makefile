@@ -1,3 +1,5 @@
+.PHONY: build run test
+
 build:
 	docker compose build
 
