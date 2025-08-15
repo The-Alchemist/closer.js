@@ -1,5 +1,4 @@
-# Use Node.js 18 LTS - provides good compatibility while being secure and supported
-FROM node:18-alpine
+FROM node:20
 
 # Set working directory
 WORKDIR /app
