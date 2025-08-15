@@ -9,8 +9,6 @@ ENV PATH="/app/node_modules/.bin:$PATH"
 # Copy package files
 COPY package.json ./
 
-# Install global dependencies required for building
-RUN npm install grunt-cli jison
 
 COPY Gruntfile.coffee ./
 # Install dependencies
@@ -19,7 +17,6 @@ RUN npm install
 # Copy source code
 COPY src/ ./src/
 COPY spec/ ./spec/
-COPY .bowerrc ./
 
 # Build the project (CoffeeScript will now be available)
 RUN grunt build
