@@ -2,7 +2,7 @@
   "name": "closer",
   "description": "Clojure parser and core library in JavaScript, compatible with the Mozilla Parser API.",
   "homepage": "http://github.com/vickychijwani/closer.js",
-  "main": "lib/src/index.js",
+  "main": "build/lib/src/index.js",
   "files": [
     "package.json",
     "LICENSE",
